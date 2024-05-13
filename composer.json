@@ -38,10 +38,7 @@
 	"autoload": {
 		"psr-4": {
 			"SinyorHepsiburada\\": "src/"
-		},
-		"files": [
-			"src\\Helpers.php"
-		]
+		}
 	},
 	"config": {
 		"sort-packages": true
