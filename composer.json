@@ -1,8 +1,8 @@
 {
-	"name": "sinyor/marketplace/hepsiburada",
+	"name": "sinyor/hepsiburada-api",
 	"description": "Hepsiburada için hazırlanmış pazaryeri entegrasyonu.",
 	"keywords": ["hepsiburada", "pazaryeri", "e-ticaret", "e-commerce", "marketplace"],
-	"homepage": "https://github.com/yorulmazsinan/hepsiburada-laravel-api",
+	"homepage": "https://github.com/yorulmazsinan/hepsiburada-api",
 	"license": "MIT",
 	"authors": [
 		{
