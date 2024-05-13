@@ -37,7 +37,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"ksmylmz\\hepsiburada\\": "src"
+			"SinyorHepsiburada\\": "src/"
 		}
 	},
 	"config": {
