@@ -2,6 +2,7 @@
 namespace SinyorHepsiburada\Services;
 
 use SinyorHepsiburada\Config\Endpoints;
+use SinyorHepsiburada\Models\BaseModels\HepsiburadaBaseResponseModel;
 use SinyorHepsiburada\Models\RequestModels\Product\GetProductInfoViaStatusRequestModel;
 
 class ProductService extends HepsiburadaBaseService
@@ -10,7 +11,7 @@ class ProductService extends HepsiburadaBaseService
      * createProduct
      *
      * @param  array $HbProduct array of SinyorHepsiburada\Models\BaseModels\Products\HepsiburadaProductModel
-     * @return HepsiburadabaseResponseModel
+     * @return HepsiburadaBaseResponseModel
      */
     public function createProduct($HbProduct)
     {

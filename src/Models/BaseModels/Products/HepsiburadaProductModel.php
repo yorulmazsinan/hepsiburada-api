@@ -6,7 +6,7 @@ class HepsiburadaProductModel
     /**
      * attributes
      *
-     * @var  SinyorHepsiburada\Models\BaseModels\Products\Attributes
+     * @var  Attributes
      */
     public $attributes;     
     /**

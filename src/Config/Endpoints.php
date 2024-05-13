@@ -1,6 +1,6 @@
 <?php
 
-namespace SinyorHepsiburada\config;
+namespace SinyorHepsiburada\Config;
 
 abstract class Endpoints
 {

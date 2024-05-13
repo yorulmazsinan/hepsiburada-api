@@ -1,7 +1,7 @@
 <?php
 namespace SinyorHepsiburada\Services;
 use SinyorHepsiburada\Config\Endpoints;
-
+use SinyorHepsiburada\Models\BaseModels\HepsiburadaBaseResponseModel;
 use SinyorHepsiburada\Models\RequestModels\BaseGetRequestModel;
 use SinyorHepsiburada\Models\RequestModels\Returns\AwaitClaimRequestModel;
 use SinyorHepsiburada\Models\RequestModels\Returns\ClaimRejectionRequestmodel;
@@ -12,7 +12,7 @@ class ReturnService extends HepsiburadaBaseService
      * acceptClaim
      *
      * @param  string $claimNumber
-     * @return HepsiburadabaseResponseModel
+     * @return HepsiburadaBaseResponseModel
      */
     public function acceptClaim($claimNumber)
     {

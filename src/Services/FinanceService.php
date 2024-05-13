@@ -3,6 +3,7 @@ namespace SinyorHepsiburada\Services;
 
 use SinyorHepsiburada\Config\Credentials;
 use SinyorHepsiburada\Config\Endpoints;
+use SinyorHepsiburada\Models\BaseModels\HepsiburadaBaseResponseModel;
 use SinyorHepsiburada\Models\RequestModels\Finance\GetInvoiceRequestModel;
 
 class FinanceService extends HepsiburadaBaseService
