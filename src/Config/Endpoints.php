@@ -4,36 +4,43 @@ namespace SinyorHepsiburada\Config;
 
 abstract class Endpoints
 {
-	public const test_base_url = "hepsiburada.com/api/";
-	public const prod_base_url = "hepsiburada.com/api/";
+	public const test_base_url = "hepsiburada.com/";
+	public const prod_base_url = "hepsiburada.com/";
 	/**
 	 * token
 	 */
 	public const token = "authenticate";
+
 	/**
 	 * subdomains
 	 */
 	public const catalog = "mpop-sit";
-	public const listing = "Listing-external-sit";
+	public const listing = "listing-external-sit";
 	public const order = "oms-external-sit";
 	public const claim = "oms-external-sit";
 	public const merchant = "oms-stub-external-sit";
 	public const finance = "mpfinance-external";
+
+
 	/**
 	 * Kategori işlemleri
 	 */
-	public const allCategories = "categories/get-all-categories";
-	public const getCategoriAttrributes = "categories/@categoriID/attributes";
-	public const getAttributeValues = "categories/@categoriID/attributes/@attributeSlug";
+	public const allCategories = "product/api/categories/get-all-categories";
+	public const getCategoriAttrributes = "product/api/categories/@categoriID/attributes";
+	public const getAttributeValues = "product/api/categories/@categoriID/attribute/@attributeSlug/values";
+
+
 	/***
 	 * Ürün işlemleri
 	 */
-	public const createProduct = "Products/import";
-	public const trackProduct = "Products/status/@trackingID";
-	public const checkIsProductImported = "Products/status/@merchantID";
-	public const getTrackingIDS = "Products/trackingId-history";
-	public const getProductStatuses = "check-Product-status";
-	public const getProductInfoViaStatusID = "Products/Products-by-merchant-and-status";
+	public const createProduct = "product/api/products/import";
+	public const fastListingProduct = "product/api/products/fastlisting";
+	public const trackProduct = "product/api/products/status/@trackingID";
+	public const checkIsProductImported = "product/api/products/status/@merchantID";
+	public const getTrackingIDS = "product/api/products/trackingId-history";
+	public const getProductStatuses = "product/api/check-product-status";
+	public const getProductInfoViaStatusID = "product/api/products/products-by-merchant-and-status";
+
 	/**
 	 * Listeleme işlemleri
 	 */
@@ -44,27 +51,35 @@ abstract class Endpoints
 	public const makeActiveListing = "listings/merchantid/@merchantid/sku/@hbsku/activate​";
 	public const makeDeactiveListing = "listings/merchantid/@merchantid/sku/@hbsku/deactivate";
 	public const getBuyBoxlist = "buybox-orders/merchantid/@merchantId";
+
 	/**
 	 * Sipariş işlemleri
 	 */
 	public const createOrder = "orders/merchantid/@merchantid";
 	public const getOrder = "orders/merchantid/@merchantid";
+
 	public const orderChangableCargoCompany = "delivery/changeablecargocompanies/merchantid/@merchantId/orderlineid/@orderlineid";
 	public const changeOrderCargoCompany = "lineitems/merchantid/@merchantId/packageablewith/lineitemid/@orderlineitemid";
+
 	public const packageChangableCargoCompany = "packages/merchantid/@merchantId/packagenumber/@packagenumber/changablecargocompanies";
 	public const changePackageCargoCompany = "packages/merchantid/@merchantId/packagenumber/@packagenumber/changecargocompany";
+
 	public const getPackgableWith = "lineitems/merchantid/@merchantId/packageablewith/lineitemid/@lineitemid";
+
 	public const packageItems = "packages/merchantid/@merchantid";
 	public const unPackageItems = "packages/merchantid/@merchantid/packagenumber/@packagenumber/unpack";
 	public const unpackedList = "packages/merchantid/@merchantid/status/unpacked";
 	public const packageList = "packages/merchantid/@merchantid";
+
 	public const getPackageCargoInfo = "packages/merchantid/packagenumber/@packagenumber";
+
 	public const getOrderDetail = "orders/merchantid/@merchantid/ordernumber/@ordernumber";
 	public const getCampings = "orders/merchantid/@merchantId/ordernumber/@orderNumber/campaigns";
 	public const sendInvoiceUrl = "packages/merchantid/@merchantId/packagenumber/@packageNumber/invoice";
 	public const getHepsiburadaCargoLabel = "packages/merchantid/@merchantId/packagenumber/@packageNumber/label";
 	public const cancelOrderItem = "lineitems/merchantid/@merchantId/id/@lineitemid/cancelbymerchant";
 	public const sendDeliveredStatus = "packages/merchantid/@merchantId/packagenumber/@packageNumber/deliver";
+
 	/**
 	 * Talep işlemleri
 	 */
