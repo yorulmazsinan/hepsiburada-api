@@ -2,6 +2,7 @@
 namespace SinyorHepsiburada\Services;
 
 use SinyorHepsiburada\Config\Endpoints;
+use SinyorHepsiburada\Models\BaseModels\HepsiburadaBaseResponseModel;
 use SinyorHepsiburada\Models\RequestModels\Category\GetAllCategoryRequestmodel;
 
 class CategoryService extends HepsiburadaBaseService

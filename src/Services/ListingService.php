@@ -3,6 +3,7 @@ namespace SinyorHepsiburada\Services;
 
 use SimpleXMLElement;
 use SinyorHepsiburada\Config\Endpoints;
+use SinyorHepsiburada\Models\BaseModels\HepsiburadaBaseResponseModel;
 use SinyorHepsiburada\Models\RequestModels\BaseGetRequestModel;
 
 class ListingService extends HepsiburadaBaseService

@@ -2,9 +2,9 @@
 namespace SinyorHepsiburada\Services;
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\RequestException;
 use SinyorHepsiburada\Config\Endpoints;
 use SinyorHepsiburada\Config\Credentials;
-use GuzzleHttp\Exception\RequestException;
 use SinyorHepsiburada\Models\BaseModels\HepsiburadaBaseResponseModel;
 use Exception;
 
