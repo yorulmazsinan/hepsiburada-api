@@ -1,38 +1,40 @@
 <?php
+namespace ksmylmz\hepsiburada;
 
-namespace SinyorHepsiburada;
 
-use SinyorHepsiburada\Services\OrderService;
-use SinyorHepsiburada\Services\ListingService;
-use SinyorHepsiburada\Services\ProductService;
-use SinyorHepsiburada\Services\CategoryService;
-use SinyorHepsiburada\Services\Returnservice;
-use SinyorHepsiburada\Services\FinanceService;
-use SinyorHepsiburada\Config\Credentials;
+use ksmylmz\hepsiburada\service\OrderService;
+use ksmylmz\hepsiburada\service\ListingService;
+use ksmylmz\hepsiburada\service\ProductService;
+use ksmylmz\hepsiburada\service\CategoryService;
+use ksmylmz\hepsiburada\service\ReturnService;
+use ksmylmz\hepsiburada\service\FinanceService;
+use ksmylmz\hepsiburada\config\Credentials;
 
-class Hepsiburada
+class Hepsiburada 
 {
-	public $category;
-	public $product;
-	public $listing;
-	public $order;
-	public $return;
-	public $finance;
-	public $username;
-	public $password;
-	public $merchantId;
-	public $isTestStage;
-	public  function __construct($username,$password,$merchantId,$isTestStage=true)
-	{
-		$credentials = new Credentials();
-		$credentials->username=$username;
-		$credentials->password=$password;
-		$credentials->merchantId=$merchantId;
-		$this->category = new CategoryService($isTestStage,$credentials);
-		$this->product = new ProductService($isTestStage,$credentials);
-		$this->order = new OrderService($isTestStage,$credentials);
-		$this->listing = new ListingService($isTestStage,$credentials);
-		$this->return = new ReturnService($isTestStage,$credentials);
-		$this->finance = new FinanceService($isTestStage,$credentials);
-	}
+    public $category;
+    public $product;
+    public $listing;
+    public $order;
+    public $return;
+    public $finance;
+    public $username;
+    public $password;
+    public $merchantId;
+    public $isTestStage;
+    public  function __construct($username,$password,$merchantId,$isTestStage=true)
+    {        
+        $credentials = new Credentials();
+        $credentials->username=$username;
+        $credentials->password=$password;
+        $credentials->merchantId=$merchantId;
+        $this->category = new CategoryService($isTestStage,$credentials);
+        $this->product = new ProductService($isTestStage,$credentials);
+        $this->order = new OrderService($isTestStage,$credentials);
+        $this->listing = new ListingService($isTestStage,$credentials);
+        $this->return = new ReturnService($isTestStage,$credentials);
+        $this->finance = new FinanceService($isTestStage,$credentials);
+    }
+    
+
 }
