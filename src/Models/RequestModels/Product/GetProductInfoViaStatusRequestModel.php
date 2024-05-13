@@ -1,0 +1,28 @@
+<?php
+namespace SinyorHepsiburada\Models\RequestModels\Product;
+
+use SinyorHepsiburada\Models\RequestModels\BaseGetRequestModel;
+
+class GetProductInfoViaStatusRequestModel extends BaseGetRequestModel
+{    
+    /**
+     * merchantId
+     *
+     * @var strint 
+     */
+    public $merchantId;    
+    /**
+     * taskStatus
+     *
+     * @var boolean
+     */
+    public $taskStatus;    
+    /**
+     * productStatus
+     *
+     * @var string
+     */
+    public $productStatus;
+}   
+
+https://mpop-sit.hepsiburada.com/Product/api/Products/Products-by-merchant-and-status?page=0&size=100&version=1&merchantId=6fc6d90d-ee1d-4372-b3a6-264b1275e9ff&productStatus=WAITING&taskStatus=false

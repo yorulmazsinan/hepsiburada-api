@@ -2,7 +2,7 @@
 	"name": "sinyor/marketplace/hepsiburada",
 	"description": "Hepsiburada için hazırlanmış pazaryeri entegrasyonu.",
 	"keywords": ["hepsiburada", "pazaryeri", "e-ticaret", "e-commerce", "marketplace"],
-	"homepage": "https://github.com/yorulmazsinan/marketplace/hepsiburada",
+	"homepage": "https://github.com/yorulmazsinan/hepsiburada-laravel-api",
 	"license": "MIT",
 	"authors": [
 		{
@@ -37,7 +37,7 @@
 	},
 	"autoload": {
 		"psr-4": {
-			"SinyorPos\\": "src/"
+			"SinyorHepsiburada\\": "src/"
 		},
 		"files": [
 			"src\\Helpers.php"
@@ -45,13 +45,6 @@
 	},
 	"config": {
 		"sort-packages": true
-	},
-	"extra": {
-		"laravel": {
-			"providers": [
-				"SinyorPos\\SinyorPosServiceProvider"
-			]
-		}
 	},
 	"scripts": {
 		"test": "./vendor/bin/phpunit",
